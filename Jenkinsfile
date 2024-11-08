@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_OWNER = 'siestageek'
+        DOCKER_IMAGE_OWNER = 'chkion1234'
         DOCKER_IAMGE_TAG = 'latest'
 	DOCKER_TOKEN = credentials('dockerhub') 
     }
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                 rm -rf hello-msa
-				git clone https://github.com/play10grounds/hello-msa.git
+				git clone https://github.com/Yongheech/hello-msa2.git
 				'''
             }
         }
